@@ -29,8 +29,12 @@ class App {
 }
 
 Iris.install(new Router({
-  baseUrl: '/iris-example/src',
+  baseUrl: '/src',
   routes: [
+    {
+      path: '/',
+      component: Iris.Empty
+    },
     {
       path: '/greeting',
       component: Greeting
